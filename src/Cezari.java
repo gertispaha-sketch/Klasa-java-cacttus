@@ -2,12 +2,14 @@ void main() {
     //Se pari shfaqim opsionet per userin
     IO.println("1.Enkripto");
     IO.println("2.Dekripto");
-    var zgjedhja = Integer.parseInt(IO.readln("Zgjidhni opsionin: 1 ose 2: ").trim());
+    IO.println("3.ROT13");
+    var zgjedhja = Integer.parseInt(IO.readln("Zgjidhni opsionin: 1 ,2 ,3: ").trim());
     // Përcakto drejtimin e zhvendosjes bazuar në zgjedhjen e përdoruesit
     var drejtimi = switch (zgjedhja) {
         case 1 -> 1;
             case 2 -> -1;
-            default -> 0;
+            case 3 -> 1;
+            default ->0;
             //Nese perdoruesi zgjedh drejtimin 1 atehere switchi do te ktheje 1, nese zgjedh 2 atehere switchi do te ktheje -1, nese zgjedh ndonje tjeter opsion atehere switchi do te ktheje 0
     };
     if (drejtimi == 0) {
@@ -18,7 +20,8 @@ void main() {
     else {
         //useri shkruan shkronjen edhe zhvendosjen e saj me numra prandaj e perdorim integer.parseInt per ta kthyer ne int dhe vleren trim per ti hek hapesirat
         var karakteri = IO.readln("Shkruaj shkronjen a-z: ").trim();
-        int zhvendosja = Integer.parseInt(IO.readln("Shkruaj shifren e zhvendosjes 1-25: ").trim());
+
+        int zhvendosja = (zgjedhja == 3) ? 13 : Integer.parseInt(IO.readln("Shkruaj zhvendosjen 1-25: ").trim());
         if (karakteri.length() != 1) {
             IO.println("Ju lutem shkruani vetem nje shkronje.");
         }

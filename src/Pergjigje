@@ -1,0 +1,11 @@
+1.Swichi fillon pas krijimit te variables ne kete ras pas variables (zgjedhja) e cilla i ka 3 opsione
+2.variabla e re(drejtimi) duke perdorun switchin ja japim 3 vlera te mundura(case 1(+1)), case (2(-1)), case (3(1))
+3.nese fshihet reshti default atehere nese perdoruesi nuk zgjedh asnje nga opsionet e mundura atehere do te kthehet ne fillim i cili do te thote qe do te pyetet perseri per zgjedhjen e tij.
+
+1.eshte ne reshtin (29) ku e perdori || per te konstatuar se nese useri jep zhvendosje > 25 ose < 1 atehere kodi do te printoj zjedh nje numer prej 1-25.
+2.ne rast te inputit 1-25 atehere kodi do te vazhdoj me pjesen tjeter te kodit.
+3.ne rast te inputit > 25 ose < 1 atehere kodi do te printoj zjedh nje numer prej 1-25 dhe do te kthehet ne fillim duke pyetur perseri per zhvendosjen e tij.
+
+1.ndyrshova reshtin e pare shtova nje opsion te 3(ROT) pastaj ne switch shova nje case te ri ku e kthen ne 1 pershkak se ROT ka kahun pozitiv pastaj tek zhvendosja duke perdorur operatorin ternar e kthej ne 13 pa e pyetur userin per numrin e zvhendosjes.
+2.sepse ne rast se useri zgjidh ROT13 dhe nuk e perodrim operatorin ternar ateher prap do e pyste per numrin e zhvendosjes edhe pse ai eshte njoftuar se ROT13 ben zvhendosjen per 13.
+3.opsioni 3(ROT13) shkronja A zvhendoset per 13 vlera ne h.
